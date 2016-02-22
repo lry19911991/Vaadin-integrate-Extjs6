@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.7.0//EN" "http://google-web-toolkit.googlecode.com/svn/tags/1.7.0/distro-source/core/src/gwt-module.dtd">
+<module>
+    <source path="client" />
+	<entry-point class="com.polelink.pike.box.widgetset.client.PikeWidgetSet" />
+
+	<inherits name="com.vaadin.DefaultWidgetSet" />
+
+	<!-- -->
+
+	<set-configuration-property name="devModeRedirectEnabled"
+		value="true" />
+
+	<!-- WidgetSetOptimizer -->
+	<generate-with class="com.polelink.pike.box.ui.PlatformUIOptimized">
+		<when-type-assignable
+			class="com.vaadin.client.metadata.ConnectorBundleLoader" />
+	</generate-with>
+
+
+
+
+    <inherits name="com.polelink.utils.vaadin.textfield.extension.widgetset.TextFieldExtensionWidgetset" />
+
+    <inherits name="com.github.wolfie.refresher.RefresherWidgetset" />
+
+    <inherits name="com.vaadin.addon.timeline.gwt.TimelineWidgetSet" />
+
+    <inherits name="com.polelink.utils.vaadin.fancylayouts.widgetset.FancyLayoutsWidgetset" />
+
+    
+
+    <inherits name="org.vaadin.hezamu.canvas.CanvasWidgetset" />
+
+    
+
+    <inherits name="org.vaadin.hene.popupbutton.widgetset.PopupbuttonWidgetset" />
+
+    <inherits name="com.polelink.utils.vaadin.masonry.widgetset.MasonryWidgetset" />
+
+    <inherits name="com.polelink.utils.vaadin.switcher.widgetset.SwitcherWidgetset" />
+
+    <inherits name="com.polelink.utils.vaadin.multifileupload.MultiFileUploadWidgetSet" />
+
+    <inherits name="com.vaadin.addon.charts.Widgetset" />
+
+    <inherits name="com.polelink.utils.vaadin.overlays.widgetset.OverlaysWidgetset" />
+
+    
+
+    <inherits name="com.polelink.utils.vaadin.draglayout.DragLayoutWidgetSet" />
+    
+
+    <inherits name="com.vaadin.addon.spreadsheet.Widgetset" />
+
+    <inherits name="com.polelink.utils.vaadin.aceeditor.AceEditorWidgetset" />
+
+    <inherits name="com.vaadin.addon.contextmenu.WidgetSet" />
+
+    <inherits name="com.polelink.pike.extend.component.widgetset.PikeExtendComponentWidgetset" />
+</module>
